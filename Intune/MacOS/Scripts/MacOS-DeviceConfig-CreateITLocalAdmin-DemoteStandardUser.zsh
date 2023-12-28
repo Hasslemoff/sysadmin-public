@@ -11,6 +11,7 @@ dscl . -create /Users/$username PrimaryGroupID 20 # 20 for admin accounts 80 for
 dscl . -create /Users/$username NFSHomeDirectory /Users/$username # Creates account home directory
 dscl . -passwd /Users/$username $password # Sets PW
 dscl . -append /Groups/admin GroupMembership $username # Adds to local admin group
+dscl . -create /Users/$username IsHidden 1 #Hides the user from the login screen
 # Get list of regular users
 users=$(dscl . -list /Users | grep -v -e '_' -e root -e nobody -e daemon -e $username)
 # Loop through them and remove them from Admins group
