@@ -1,7 +1,7 @@
 #!/bin/zsh
 # Username and Password to create
 username=ITAdminAccountUserName
-password="SuperSecurePassword3!"
+password="Mat-Lipstick-Stupid-North-7!"
 # Create User and add to admins
 dscl . -create /Users/$username
 dscl . -create /Users/$username UserShell /bin/bash # Sets Default Shell could be sh or zsh
