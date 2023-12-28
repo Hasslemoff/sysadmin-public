@@ -1,0 +1,1 @@
+sudo /usr/bin/dscl . delete "users/ITAdminAccountUserName"
