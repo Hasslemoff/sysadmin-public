@@ -1,0 +1,1 @@
+Get-NetAdapter | Select Name, Status, LinkSpeed
